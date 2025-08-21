@@ -1,26 +1,26 @@
-# ROMI Backend Challenge
+# ROMI API REST
 
-## 🚀 Tecnologías
+## Tecnologías
 - Node.js
 - Express.js
 - MongoDB (Mongoose)
 
-## 📂 Arquitectura
+## Arquitectura
 - `models/` → esquemas de MongoDB
 - `controllers/` → lógica de negocio
 - `routes/` → definición de endpoints
 - `app.js` → configuración de middlewares y rutas
 - `server.js` → conexión a base de datos y arranque del servidor
 
-## ▶️ Cómo ejecutar
-1. Clona este repositorio
-2. Instala dependencias: `npm install`
-3. Crea un archivo `.env` con:
-    PORT=3000
-    MONGO_URI=mongodb://localhost:27017/romi
-4. Inicia el servidor: `npm run dev`
+## Ejecución
+1. Clonar repositorio
+2. Instalar dependencias: `npm install`
+3. Crea un archivo `.env` con variables:
+    - PORT,
+    - MONGO_URI
+4. Iniciar el servidor: `npm run dev`
 
-## 📌 Endpoints
+## Endpoints
 - `POST /api/patients` → Registrar paciente
 - `GET /api/patients` → Consultar pacientes
 

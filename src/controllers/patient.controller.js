@@ -1,6 +1,5 @@
 const Patient = require("../models/patient.model");
 
-// Registrar paciente
 exports.createPatient = async (req, res) => {
   try {
     const { nombre, edad, sintomas } = req.body;
@@ -23,7 +22,6 @@ exports.createPatient = async (req, res) => {
   }
 };
 
-// Consultar pacientes
 exports.getPatients = async (req, res) => {
   try {
     const patients = await Patient.find();
